@@ -1,16 +1,16 @@
 nav.primary-navigation {
-    margin: 0 auto;
+    margin: auto;
     display: block;
     text-align: left;
-    font-size: 19px;
+    font-size: 1.5em;
     top: 0;
-    left: 0;
-    position: absolute;
+    position: sticky;
     background-color: white;
-    padding-top: 15px;
-    padding-left: 180px;
+    padding-top: 1em;
+    padding-bottom: 0.2em;
+    padding-left: 9em;
     /* padding-bottom: 15px; */
-    width: 100%;
+    width: 100em;
     z-index: 10;
 }
 
@@ -31,6 +31,7 @@ nav.primary-navigation {
 
 nav.primary-navigation ul li:first-child {
     border-left: 0;
+    padding-left: 3em;
 }
 
 nav.primary-navigation li a {
@@ -102,7 +103,8 @@ ul li ul li a {
 }
 
 .imagen {
-    position: absolute;
-    margin-left: -150px;
-    margin-top: -15px;
+    position: absolute;     
+    right: 90%;
+    top:2%;
+
 }
