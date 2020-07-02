@@ -1,12 +1,14 @@
+.container-grid{
+     position: relative;
+}
+
 .wrapper {
-    display: inline-grid;
-    margin: auto;
-    margin-top: 2em;
+    display: grid;
+    margin: 2em 0em;
     grid-gap: 20px;
-    grid-template-columns: 40em 35em 40em;
+    grid-template-columns: 40em 25em 30em;
     color: #444;
-    left: 0%;
-    padding-right: 2.5em;
+    padding-right: 8.5em;
 }
 
 .box {
@@ -22,7 +24,7 @@
 }
 
 .a img {
-    width: 51em;
+    width: 44.5em;
     height: 25em;
 }
 
@@ -80,25 +82,26 @@
 
 .textb {
     width: 12em;
-    font-size: 1.5em;
+    font-size: 1em;
     font-family: 'Amaranth';
     color: #00003d;
-    margin-left: 1.5em;
-    margin-top: 4.5em;
+    margin-left: 5.5em;
+    margin-top: 9em;
     text-align: justify;
 }
 
 .botonb {
-    margin-top: 1.5em;
+    margin-top: 2.2em;
     font-family: 'Alegreya';
     text-align: right;
-    font-size: 0.7em;
-    margin-left: 2em;
+    font-size: 0.8em;
+    margin-left: 0.5em;
     width: 20em;
+    text-align: left;
 }
 
 .icon {
-    margin-left: 1vh;
+    margin-left: 0.2em;
 }
 
 .botonb:hover {

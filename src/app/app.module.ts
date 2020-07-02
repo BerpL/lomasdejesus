@@ -9,6 +9,7 @@ import { AboutComponent } from './components/about/about.component';
 import { SocialMediaComponent } from './components/social-media/social-media.component';
 import { NatureMediaComponent } from './components/nature-media/nature-media.component';
 import { ProjectsMediaComponent } from './components/projects-media/projects-media.component';
+import { OportunitiesComponent } from './components/oportunities/oportunities.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { ProjectsMediaComponent } from './components/projects-media/projects-med
     AboutComponent,
     SocialMediaComponent,
     NatureMediaComponent,
-    ProjectsMediaComponent
+    ProjectsMediaComponent,
+    OportunitiesComponent
   ],
   imports: [
     BrowserModule
