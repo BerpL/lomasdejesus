@@ -6,6 +6,9 @@ import { HomeComponent } from './components/home/home.component';
 import { NavbarComponent } from './shared/navbar/navbar.component';
 import { NewsComponent } from './components/news/news.component';
 import { AboutComponent } from './components/about/about.component';
+import { SocialMediaComponent } from './components/social-media/social-media.component';
+import { NatureMediaComponent } from './components/nature-media/nature-media.component';
+import { ProjectsMediaComponent } from './components/projects-media/projects-media.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +16,10 @@ import { AboutComponent } from './components/about/about.component';
     HomeComponent,
     NavbarComponent,
     NewsComponent,
-    AboutComponent
+    AboutComponent,
+    SocialMediaComponent,
+    NatureMediaComponent,
+    ProjectsMediaComponent
   ],
   imports: [
     BrowserModule

@@ -1,0 +1,72 @@
+<div class="space">
+  <div class="title">
+    <p>SOCIALES</p>
+  </div>
+  <div class="carousel">
+    <ng-container *ngFor="let slide of slides; let i = index">
+      <img
+        *ngIf="i === currentSlide"
+        [src]="slide.src"
+        class="slide"
+      />
+    </ng-container>
+  </div>
+    <!-- controls -->
+    <div class="">
+      <button *ngFor="let slide of slides; let i = index" class="control prev" (click)="onPreviousClick()">
+        <img
+          *ngIf="i === currentSlide"
+          [src]="slide.src"
+          class="slide"
+        />
+      </button>
+    </div>
+    <div class="">
+      <button *ngFor="let slide of slides; let i = index" class="control next" (click)="onNextClick()">
+        <img
+          *ngIf="i === currentSlide"
+          [src]="slide.src"
+          class="slide"
+        />
+      </button>
+    </div>
+
+<!--  <div class="slider">-->
+<!--    <button class="slider-button slider-button-left">-->
+<!--      <ul class="left-side">-->
+<!--&lt;!&ndash;        <li class="left-image">&ndash;&gt;-->
+<!--&lt;!&ndash;          <img src="assets/img/fondo/_DSC1119.jpg">&ndash;&gt;-->
+<!--&lt;!&ndash;        </li>&ndash;&gt;-->
+<!--&lt;!&ndash;        <li class="left-image">&ndash;&gt;-->
+<!--&lt;!&ndash;          <img src="assets/img/fondo/ave.jpg">&ndash;&gt;-->
+<!--&lt;!&ndash;        </li>&ndash;&gt;-->
+<!--        <li class="left-image">-->
+<!--          <img src="assets/img/fondo/navbar.png">-->
+<!--        </li>-->
+<!--      </ul>-->
+<!--    </button>-->
+<!--    <div class="main-container">-->
+<!--      <ul class="main">-->
+<!--        <li class="principal">-->
+<!--            <img src="assets/img/fondo/ave.jpg">-->
+<!--        </li>-->
+<!--        <li class="principal">-->
+<!--            <img src="assets/img/fondo/navbar.png">-->
+<!--        </li>-->
+<!--        <li class="principal">-->
+<!--            <img src="assets/img/fondo/_DSC1119.jpg">-->
+<!--        </li>-->
+<!--      </ul>-->
+<!--    </div>-->
+<!--    <button class="slider-button slider-button-right">-->
+<!--      <ul class="rigth-side">-->
+<!--&lt;!&ndash;        <li class="right-image"><img src="assets/img/fondo/navbar.png"></li>&ndash;&gt;-->
+<!--&lt;!&ndash;        <li class="right-image"><img src="assets/img/fondo/_DSC1119.jpg"></li>&ndash;&gt;-->
+<!--        <li class="right-image"><img src="assets/img/fondo/ave.jpg"></li>-->
+<!--      </ul>-->
+<!--    </button>-->
+<!--  </div>-->
+
+</div>
+
+
