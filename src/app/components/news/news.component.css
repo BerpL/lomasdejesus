@@ -26,6 +26,53 @@
     height: 25em;
 }
 
+.textWithBlurredBg{
+  width:auto;
+  height:auto;
+  display:inline-block;
+  position:relative;
+  transition:.3s;
+}
+
+.textWithBlurredBg img{
+  transition:.3s;
+}
+
+.textWithBlurredBg:hover img{
+  filter: brightness(60%);
+}
+
+.textWithBlurredBg :not(img){
+  position:absolute;
+  z-index:1;
+  width:100%;
+  color:#fff;
+  opacity:0;
+  transition:.3s;
+}
+
+.textWithBlurredBg p{
+  width: 96%;
+  top:40%;
+  left: 2%;
+  text-align: justify;
+}
+.textWithBlurredBg h2{
+  text-align: left;
+  left: 2%;
+  top:30%;
+}
+.textWithBlurredBg h1{
+  text-align: left;
+  left: 2%;
+  font-size: 2.5em;
+  top:20%;
+}
+
+.textWithBlurredBg:hover :not(img){
+  opacity:1;
+}
+
 .b {
     grid-column: 3;
     grid-row: 2;
